@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_putendl.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 12:56:10 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/08 15:39:37 by jkangas          ###   ########.fr       */
+/*   Created: 2021/11/08 15:16:54 by jkangas           #+#    #+#             */
+/*   Updated: 2021/11/08 15:29:21 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include <string.h>
+#include "libft.h"
+#include <unistd.h>
 
-void	ft_putchar(char c);
-void	ft_putstr(char const *s);
-size_t	ft_strlen(const char *s);
-void	ft_putendl(char const *s);
+void	ft_putendl(char const *s)
+{
+	size_t	len;
 
-#endif
+	len = ft_strlen(s);
+	write(1, s, len);
+	ft_putchar('\n');
+}
