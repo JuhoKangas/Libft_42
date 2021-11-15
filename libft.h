@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 12:56:10 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/11 17:57:05 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/15 20:10:17 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ void	ft_putendl(char const *s);
 void	ft_putnbr(int n);
 size_t	ft_strlen(const char *s);
 char	*ft_strdup(const char *s1);
+int		ft_strcmp(const char *s1, const char *s2);
 int		ft_isascii(int c);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
