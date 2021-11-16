@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 12:56:10 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/15 20:10:17 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/16 19:00:30 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	ft_putnbr(int n);
 size_t	ft_strlen(const char *s);
 char	*ft_strdup(const char *s1);
 int		ft_strcmp(const char *s1, const char *s2);
+char	*strcpy(char *dst, const char *src);
+char	*strncpy(char *dst, const char *src, size_t len);
 int		ft_isascii(int c);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
