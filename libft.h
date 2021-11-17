@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 12:56:10 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/16 19:00:30 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/17 12:42:49 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,10 @@ void	ft_putnbr(int n);
 size_t	ft_strlen(const char *s);
 char	*ft_strdup(const char *s1);
 int		ft_strcmp(const char *s1, const char *s2);
-char	*strcpy(char *dst, const char *src);
-char	*strncpy(char *dst, const char *src, size_t len);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
+char	*ft_strcpy(char *dst, const char *src);
+char	*ft_strncpy(char *dst, const char *src, size_t len);
+char	*ft_strstr(const char *haystack, const char *needle);
 int		ft_isascii(int c);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -30,8 +32,8 @@ int		ft_isalnum(int c);
 int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
-void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
+void	*ft_memset(void *b, int c, size_t len);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
 

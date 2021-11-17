@@ -1,25 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/11 12:57:07 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/17 12:43:34 by jkangas          ###   ########.fr       */
+/*   Created: 2021/11/17 12:13:32 by jkangas           #+#    #+#             */
+/*   Updated: 2021/11/17 12:31:00 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
-void	*ft_memset(void *b, int c, size_t len)
+char	*ft_strstr(const char *haystack, const char *needle)
 {
-	unsigned char	*p;
+	size_t	i;
 
-	p = b;
-	while (len--)
-	{
-		*p++ = (unsigned char)c;
-	}
-	return (b);
+	i = 0;
+	while 
 }

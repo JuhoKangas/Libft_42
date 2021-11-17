@@ -6,13 +6,13 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 17:40:40 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/11 17:52:32 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/17 12:43:15 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memccpy(void *dst, const void *src,int c, size_t n)
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
 	size_t	i;
 
