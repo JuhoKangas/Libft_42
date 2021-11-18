@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 18:07:49 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/17 13:26:52 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/18 12:22:29 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ int	main(void)
 	passed += test_strlen();
 	tests++;
 	passed += test_strdup();
+	tests++;
+	passed += test_strcpy();
 	tests++;
 	passed += test_strcmp();
 	tests++;
