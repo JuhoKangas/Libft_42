@@ -6,7 +6,7 @@
 #    By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/03 13:55:41 by jkangas           #+#    #+#              #
-#    Updated: 2021/11/18 12:23:31 by jkangas          ###   ########.fr        #
+#    Updated: 2021/11/18 17:56:25 by jkangas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,8 @@ FUNC = ft_putchar \
 		ft_strncmp \
 		ft_strcpy \
 		ft_strncpy \
+		ft_strstr \
+		ft_strnstr \
 		ft_isalnum \
 		ft_isalpha \
 		ft_isascii \
