@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 12:56:10 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/18 17:30:58 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/19 16:51:01 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ int		test_strcpy(void);
 int		test_strncpy(void);
 int		test_strstr(void);
 int		test_strnstr(void);
+int		test_atoi(void);
 int		test_isalnum(void);
 int		test_isalpha(void);
 int		test_isascii(void);
