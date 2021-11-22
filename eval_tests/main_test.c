@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 18:07:49 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/19 16:50:05 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/22 15:41:49 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ int	main(void)
 	tests++;
 	passed += test_strstr();
 	tests++;
+	passed += test_strchr();
+	tests++;
 	passed += test_strnstr();
 	tests++;
 	passed += test_atoi();
@@ -58,6 +60,8 @@ int	main(void)
 	passed += test_memcpy();
 	tests++;
 	passed += test_memccpy();
+	tests++;
+	passed += test_memchr();
 	tests++;
 
 	printf("\nTests ran: \t\t\t%i\nTests passed: \t\t\t%i\n", tests, passed);
