@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 12:56:10 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/22 15:38:20 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/22 15:58:56 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ char	*ft_strncpy(char *dst, const char *src, size_t len);
 char	*ft_strstr(const char *haystack, const char *needle);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
 int		ft_atoi(const char *str);
 int		ft_isascii(int c);
 int		ft_isalpha(int c);
