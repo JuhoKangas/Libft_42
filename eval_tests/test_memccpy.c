@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 17:59:38 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/11 18:21:16 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/23 20:48:14 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	test_memccpy(void)
 	else
 	{
 		RED
-		printf("ERROR 1: ret1 != ret2\n");
+		printf("ERROR 1: ret1 != ret2\n%s\n%s\n", ret1, ret2);
 		CLEAR
 	}
 	
