@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 12:56:10 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/22 15:58:56 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/23 12:20:51 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isprint(int c);
+int		ft_iswhitespace(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 void	ft_bzero(void *s, size_t n);

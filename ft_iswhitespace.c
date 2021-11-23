@@ -1,36 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_iswhitespace.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/19 15:12:27 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/23 12:22:17 by jkangas          ###   ########.fr       */
+/*   Created: 2021/11/23 12:17:13 by jkangas           #+#    #+#             */
+/*   Updated: 2021/11/23 12:20:25 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+int	ft_iswhitespace(int c)
 {
-	size_t	i;
-	int		return_value;
-	int		sign;
-
-	i = 0;
-	sign = 1;
-	return_value = 0;
-	if (*str == '\0')
-		return (0);
-	while (ft_iswhitespace(str[i]))
-		i++;
-	if (str[i] == '-' || str[i] == '+')
-		sign = 1 - 2 * (str[i++] == '-');
-	while (ft_isdigit(str[i]))
-	{
-		return_value = return_value * 10 + str[i] - '0';
-		i++;
-	}
-	return (sign * return_value);
+	if (c == ' ' || c == '\n' || c == '\t'
+		|| c == '\r' || c == '\v' || c == '\f')
+		return (1);
+	return (0);
 }

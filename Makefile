@@ -6,7 +6,7 @@
 #    By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/03 13:55:41 by jkangas           #+#    #+#              #
-#    Updated: 2021/11/22 15:59:10 by jkangas          ###   ########.fr        #
+#    Updated: 2021/11/23 12:21:08 by jkangas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,7 @@ FUNC = ft_putchar \
 		ft_isascii \
 		ft_isdigit \
 		ft_isprint \
+		ft_iswhitespace \
 		ft_memccpy \
 		ft_memcpy \
 		ft_memset \
