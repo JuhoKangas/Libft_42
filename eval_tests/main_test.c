@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 18:07:49 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/22 17:11:44 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/23 13:27:50 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,8 @@ int	main(void)
 	passed += test_bzero();
 	tests++;
 	passed += test_memcpy();
+	tests++;
+	passed += test_memcmp();
 	tests++;
 	passed += test_memccpy();
 	tests++;
