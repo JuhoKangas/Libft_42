@@ -6,7 +6,7 @@
 #    By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/03 13:55:41 by jkangas           #+#    #+#              #
-#    Updated: 2021/11/23 13:26:45 by jkangas          ###   ########.fr        #
+#    Updated: 2021/11/23 17:03:32 by jkangas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,6 +39,7 @@ FUNC = ft_putchar \
 		ft_memcmp \
 		ft_memset \
 		ft_memchr \
+		ft_memmove \
 		ft_bzero \
 		ft_tolower \
 		ft_toupper

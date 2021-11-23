@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 18:07:49 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/23 13:27:50 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/23 18:27:17 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,8 @@ int	main(void)
 	passed += test_memccpy();
 	tests++;
 	passed += test_memchr();
+	tests++;
+	passed += test_memmove();
 	tests++;
 
 	printf("\nTests ran: \t\t\t%i\nTests passed: \t\t\t%i\n", tests, passed);

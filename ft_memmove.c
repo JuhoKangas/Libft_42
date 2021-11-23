@@ -1,37 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ptnbr.c                                         :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/10 13:54:00 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/23 20:25:37 by jkangas          ###   ########.fr       */
+/*   Created: 2021/11/23 16:50:37 by jkangas           #+#    #+#             */
+/*   Updated: 2021/11/23 17:10:47 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
-void	ft_putnbr(int n)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	if (n == -2147483648)
+	if (!dst && !src)
+		return (dst);
+	if (dst < src)
 	{
-		write(1, "-2147483648", 11);
-		return ;
+		ft_memcpy(dst, src, len);
 	}
-	if (n < 0)
+	else
 	{
-		n = -n;
-		ft_putchar('-');
+		while (len > 0)
+		{
+			((char *)dst)[len - 1] = ((char *)src)[len - 1];
+			len--;
+		}
 	}
-	if (n < 10)
-	{
-		ft_putchar(n + '0');
-	}
-	if (n >= 10)
-	{
-		ft_putnbr(n / 10);
-		ft_putnbr(n % 10);
-	}
+	return (dst);
 }

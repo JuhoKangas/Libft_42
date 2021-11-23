@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 14:09:45 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/10 14:56:55 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/23 20:25:33 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,10 @@
 int	main(void)
 {
 	int	i = 0;
-	int j = -5000;
-	int k = 36034;
+	int j = 10;
+	int k = -36034;
+	int random = 2069594174;
+	int random2 = 1069594174;
 	int max = 2147483647;
 	int min = -2147483648;
 
@@ -27,9 +29,14 @@ int	main(void)
 	printf("\n");
 	ft_putnbr(k);
 	printf("\n");
+	ft_putnbr(random);
+	printf("\n");
+	ft_putnbr(random2);
+	printf("\n");
 	ft_putnbr(min);
 	printf("\n");
 	ft_putnbr(max);
 	printf("\n");
+
 	return (0);
 }
