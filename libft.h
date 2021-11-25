@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 12:56:10 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/23 17:04:17 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/24 16:16:00 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ char	*ft_strstr(const char *haystack, const char *needle);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
+char	*ft_strcat(char *s1, const char *s2);
+char	*ft_strncat(char *s1, const char *s2, size_t n);
 int		ft_atoi(const char *str);
 int		ft_isascii(int c);
 int		ft_isalpha(int c);
