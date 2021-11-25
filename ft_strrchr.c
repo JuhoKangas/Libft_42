@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 15:57:57 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/22 19:13:35 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/25 14:06:48 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	if (s[len] == c)
 		return ((char *)s + len);
-	return (NULL); 
+	return (NULL);
 }

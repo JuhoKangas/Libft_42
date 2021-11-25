@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 12:56:10 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/24 16:16:00 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/25 13:59:16 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strcat(char *s1, const char *s2);
 char	*ft_strncat(char *s1, const char *s2, size_t n);
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 int		ft_atoi(const char *str);
 int		ft_isascii(int c);
 int		ft_isalpha(int c);

@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 15:35:11 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/22 15:55:35 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/25 14:24:21 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ int		test_strchr(void)
 
 	printf("ft_strchr:\t\t\t");
 
-	char *ret1 = ft_strchr(str, 'o');
-	char *ret2 = strchr(str, 'o');
+	char *ret1 = ft_strchr(str, 'H');
+	char *ret2 = strchr(str, 'H');
 
 	if (strcmp(ret1, ret2) == 0)
 		passed++;
