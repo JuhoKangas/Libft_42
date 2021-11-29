@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 12:56:10 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/29 17:19:02 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/29 17:48:35 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,5 +51,6 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memalloc(size_t size);
+void	ft_memdel(void **ap);
 
 #endif
