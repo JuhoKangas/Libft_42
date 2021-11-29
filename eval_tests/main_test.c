@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 18:07:49 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/29 16:35:46 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/29 17:20:36 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,8 @@ int	main(void)
 	passed += test_memcpy();
 	tests++;
 	passed += test_memcmp();
+	tests++;
+	passed += test_memalloc();
 	tests++;
 	passed += test_memccpy();
 	tests++;
