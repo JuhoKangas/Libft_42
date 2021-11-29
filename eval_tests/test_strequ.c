@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 13:06:34 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/29 13:25:51 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/29 14:01:02 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ int test_strequ(void)
 	char *str1 = "Test this";
 	char *str2 = "Test this";
 
+	printf("ft_strequ:\t\t\t");
 	if (ft_strequ(str1, str2))
 		passed++;
 	else
@@ -41,7 +42,7 @@ int test_strequ(void)
 	if (passed == 2)
 	{
 		GREEN
-		printf("OK/n");
+		printf("OK\n");
 		CLEAR
 		return (1);
 	}
