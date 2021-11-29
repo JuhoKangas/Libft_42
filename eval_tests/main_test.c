@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 18:07:49 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/29 18:04:03 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/29 19:17:34 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,8 @@ int	main(void)
 	passed += test_strncat();
 	tests++;
 	passed += test_strlcat();
+	tests++;
+	passed += test_strnew();
 	tests++;
 	passed += test_strequ();
 	tests++;
