@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 13:06:34 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/29 14:01:02 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/29 16:17:45 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int test_strequ(void)
 	else
 	{
 		RED
-		printf("ERROR 1: \n%d\n%s\n%s\n", ft_strequ(str1, str2), str1, str2);
+		printf("ERROR 1: ft_strequ(str1, str2)\n%d\n%s\n%s\n", ft_strequ(str1, str2), str1, str2);
 		CLEAR
 	}
 
@@ -35,11 +35,56 @@ int test_strequ(void)
 	else
 	{
 		RED
-		printf("ERROR 2: \n%d\n", ft_strequ(str1, "Test this"));
+		printf("ERROR 2: ft_strequ(str1, \"Test this\")\n%d\n", ft_strequ(str1, "Test this"));
 		CLEAR
 	}
 
-	if (passed == 2)
+	if (ft_strequ("Test this", str2))
+		passed++;
+	else
+	{
+		RED
+		printf("ERROR 3: ft_strequ(\"Test this\", str2)\n%d\n", ft_strequ("Test this", str2));
+		CLEAR
+	}
+
+	if (ft_strequ("", ""))
+		passed++;
+	else
+	{
+		RED
+		printf("ERROR 4: ft_strequ(\"\", \"\") == 0\n");
+		CLEAR
+	}
+
+	if (ft_strequ(str1, "") == 0)
+		passed++;
+	else
+	{
+		RED
+		printf("ERROR 5: ft_strequ(str1, \"\") != 0\n");
+		CLEAR
+	}
+
+	if (ft_strequ("", str2) == 0)
+		passed++;
+	else
+	{
+		RED
+		printf("ERROR 6: ft_strequ(\"\", str2) != 0\n");
+		CLEAR
+	}
+
+	if (ft_strequ("Test this ", str2) == 0)
+		passed++;
+	else
+	{
+		RED
+		printf("ERROR 7: ft_strequ(\"Test this \", str2)\n%d\n", ft_strequ("Test this ", str2));
+		CLEAR
+	}
+
+	if (passed == 7)
 	{
 		GREEN
 		printf("OK\n");
