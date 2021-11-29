@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main_test.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
+/*   By: jkangas <jkangas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 18:07:49 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/26 14:08:37 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/29 13:26:54 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,8 @@ int	main(void)
 	passed += test_strncat();
 	tests++;
 	passed += test_strlcat();
+	tests++;
+	passed += test_strequ();
 	tests++;
 	passed += test_strchr();
 	tests++;

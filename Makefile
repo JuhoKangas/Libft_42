@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+         #
+#    By: jkangas <jkangas@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/03 13:55:41 by jkangas           #+#    #+#              #
-#    Updated: 2021/11/26 16:57:17 by jkangas          ###   ########.fr        #
+#    Updated: 2021/11/29 13:27:23 by jkangas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,6 +28,7 @@ FUNC = ft_putchar \
 		ft_strequ \
 		ft_strnequ \
 		ft_strnstr \
+		ft_strequ \
 		ft_strchr \
 		ft_strrchr \
 		ft_strcat \

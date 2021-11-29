@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   test_libft.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
+/*   By: jkangas <jkangas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 12:56:10 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/26 14:08:13 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/29 13:29:52 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ int		test_strcpy(void);
 int		test_strncpy(void);
 int		test_strstr(void);
 int		test_strclr(void);
+int		test_strequ(void);
 int		test_strcat(void);
 int		test_strncat(void);
 int		test_strlcat(void);
