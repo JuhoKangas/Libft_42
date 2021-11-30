@@ -6,7 +6,7 @@
 #    By: jkangas <jkangas@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/03 13:55:41 by jkangas           #+#    #+#              #
-#    Updated: 2021/11/30 14:50:50 by jkangas          ###   ########.fr        #
+#    Updated: 2021/11/30 17:34:07 by jkangas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,6 +32,7 @@ FUNC = ft_putchar \
 		ft_strnstr \
 		ft_strequ \
 		ft_striter \
+		ft_striteri \
 		ft_strchr \
 		ft_strrchr \
 		ft_strcat \

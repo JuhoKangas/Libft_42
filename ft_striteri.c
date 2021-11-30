@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striter.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/30 12:42:58 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/30 15:04:06 by jkangas          ###   ########.fr       */
+/*   Created: 2021/11/30 14:59:00 by jkangas           #+#    #+#             */
+/*   Updated: 2021/11/30 15:04:39 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_striter(char *s, void (*f)(char *))
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	size_t	i;
+	unsigned int	i;
 
 	i = 0;
 	while (s != 0 && s[i] != '\0')
 	{
-		f(&s[i]);
+		f(i, &s[i]);
 		i++;
 	}
 }
