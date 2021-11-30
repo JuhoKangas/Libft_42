@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 12:56:10 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/29 19:55:26 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/30 14:50:18 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isprint(int c);
 int		ft_isspace(int c);
+int		ft_isupper(int c);
+int		ft_islower(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 void	ft_bzero(void *s, size_t n);
@@ -54,5 +56,6 @@ void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memalloc(size_t size);
 void	ft_memdel(void **ap);
 void	ft_strdel(char **as);
+void	ft_striter(char *s, void (*f)(char *));
 
 #endif

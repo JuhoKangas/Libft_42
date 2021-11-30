@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 18:30:28 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/29 19:33:16 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/11/30 13:53:07 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	test_strnew(void)
 	char	str1[16] = {'\0'};
 	char	*str2 = ft_strnew(15);
 
-	printf("ft_strnew\t\t\t");
+	printf("ft_strnew:\t\t\t");
 
 	if (memcmp(str1, str2, 16) == 0)
 		passed++;
