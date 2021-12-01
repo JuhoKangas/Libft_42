@@ -6,12 +6,13 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 14:45:40 by jkangas           #+#    #+#             */
-/*   Updated: 2021/12/01 14:59:41 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/12/01 19:46:58 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "test_libft.h"
 #include "../libft.h"
+#include <stdlib.h>
 
 static	char	char_tolower(char c)
 {
@@ -40,6 +41,8 @@ int	test_strmap(void)
 		printf("ERROR: strcmp != 0\n%s\n%s\n", str1, check);
 		CLEAR
 	}
+
+	free(str1);
 
 	if (passed == 1)
 	{

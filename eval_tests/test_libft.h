@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 12:56:10 by jkangas           #+#    #+#             */
-/*   Updated: 2021/12/01 15:05:06 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/12/01 20:29:48 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ void	test_putchar(char c);
 void	test_putstr(char const *s);
 int		test_strlen(void);
 int		test_strdup(void);
+int		test_strsub(void);
 int		test_strcmp(void);
 int		test_strncmp(void);
 int		test_strcpy(void);
