@@ -6,7 +6,7 @@
 #    By: jkangas <jkangas@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/03 13:55:41 by jkangas           #+#    #+#              #
-#    Updated: 2021/12/02 16:37:01 by jkangas          ###   ########.fr        #
+#    Updated: 2021/12/02 20:11:57 by jkangas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,6 +32,7 @@ FUNC = ft_putchar \
 		ft_strclr \
 		ft_strstr \
 		ft_strnew \
+		ft_strtrim \
 		ft_strdel \
 		ft_strsub \
 		ft_strequ \
@@ -65,7 +66,7 @@ FUNC = ft_putchar \
 		ft_memmove \
 		ft_bzero \
 		ft_tolower \
-		ft_toupper
+		ft_toupper \
 
 SRCS = $(addsuffix .c, $(FUNC))
 OBJ = $(addsuffix .o, $(FUNC))

@@ -1,37 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsub.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/01 17:00:57 by jkangas           #+#    #+#             */
-/*   Updated: 2021/12/02 20:34:29 by jkangas          ###   ########.fr       */
+/*   Created: 2021/12/02 17:21:36 by jkangas           #+#    #+#             */
+/*   Updated: 2021/12/02 19:42:52 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
+#include <stdio.h>
 
-char	*ft_strsub(char const *s, unsigned int start, size_t len)
+char	*ft_strtrim(char const *s)
 {
-	char	*str;
 	size_t	i;
+	size_t	end;
+	char	*ret;
 
-	if (s == 0)
+	if (s == NULL)
 		return (NULL);
-	str = (char *)malloc(sizeof(*str) * len + 1);
-	if (str == NULL)
-		return (NULL);
-	if (start > ft_strlen(s))
-		return (str);
 	i = 0;
-	while (i < len)
-	{
-		str[i] = s[start];
+	while (ft_isspace(s[i]))
 		i++;
-		start++;
-	}
-	str[i] = '\0';
-	return (str);
+	end = ft_strlen(s);
+	while ((ft_isspace(s[end]) || s[end] == '\0') && end != i)
+		end--;
+	ret = ft_strsub(s, i, end - i + 1);
+	return (ret);
 }
