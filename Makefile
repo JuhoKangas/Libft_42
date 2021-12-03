@@ -6,7 +6,7 @@
 #    By: jkangas <jkangas@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/03 13:55:41 by jkangas           #+#    #+#              #
-#    Updated: 2021/12/02 20:11:57 by jkangas          ###   ########.fr        #
+#    Updated: 2021/12/03 18:36:37 by jkangas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,6 +47,7 @@ FUNC = ft_putchar \
 		ft_strcat \
 		ft_strncat \
 		ft_strlcat \
+		ft_strsplit \
 		ft_atoi \
 		ft_isalnum \
 		ft_isalpha \
@@ -56,6 +57,7 @@ FUNC = ft_putchar \
 		ft_isspace \
 		ft_isupper \
 		ft_islower \
+		ft_wordcount \
 		ft_memccpy \
 		ft_memcpy \
 		ft_memcmp \
