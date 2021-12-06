@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 17:04:07 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/30 17:56:29 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/12/06 20:16:28 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ static	void	toupper(unsigned int i, char *c)
 int	test_striteri(void)
 {
 	int	passed = 0;
-	size_t	i = 0;
 
 	char str1[] = "abcdefghijklmnopqrstuvwxyz";
 	char str2[] = "AbCdEfGhIjKlMnOpQrStUvWxYz";
