@@ -6,13 +6,20 @@
 /*   By: jkangas <jkangas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 12:56:10 by jkangas           #+#    #+#             */
-/*   Updated: 2021/12/06 13:55:57 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/12/07 14:59:32 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <string.h>
+
+typedef struct s_list
+{
+	void			*content;
+	size_t			content_size;
+	struct s_list	*next;
+}					t_list;
 
 void	ft_putchar(char c);
 void	ft_putstr(char const *s);
@@ -72,5 +79,6 @@ void	ft_putendl_fd(char const *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 int		ft_wordcount(const char *str, char c);
 int		ft_power(int base, int power);
+t_list	*ft_lstnew(void const *content, size_t content_size);
 
 #endif
