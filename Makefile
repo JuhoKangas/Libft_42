@@ -6,7 +6,7 @@
 #    By: jkangas <jkangas@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/03 13:55:41 by jkangas           #+#    #+#              #
-#    Updated: 2021/12/07 14:59:36 by jkangas          ###   ########.fr        #
+#    Updated: 2021/12/07 17:53:16 by jkangas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,6 +73,7 @@ FUNC = ft_putchar \
 		ft_tolower \
 		ft_toupper \
 		ft_lstnew \
+		ft_lstdelone \
 
 SRCS = $(addsuffix .c, $(FUNC))
 OBJ = $(addsuffix .o, $(FUNC))
