@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 12:56:10 by jkangas           #+#    #+#             */
-/*   Updated: 2021/12/06 20:13:47 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/12/07 18:30:41 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,5 +66,7 @@ int		test_memdel(void);
 int		test_memalloc(void);
 int		test_memcmp(void);
 int		test_memmove(void);
+int		test_lstnew(void);
+int		test_lstdelone(void);
 
 #endif

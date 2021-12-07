@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 15:08:21 by jkangas           #+#    #+#             */
-/*   Updated: 2021/12/07 18:09:49 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/12/07 18:31:43 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -139,11 +139,5 @@ int	test_lstnew(void)
 		CLEAR
 		return (1);
 	}
-	return (0);
-}
-
-int	main(void)
-{
-	test_lstnew();
 	return (0);
 }
