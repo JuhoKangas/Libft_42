@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/29 18:11:40 by jkangas           #+#    #+#             */
-/*   Updated: 2021/12/08 15:12:22 by jkangas          ###   ########.fr       */
+/*   Created: 2021/12/07 18:42:24 by jkangas           #+#    #+#             */
+/*   Updated: 2021/12/08 14:14:07 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-char	*ft_strnew(size_t size)
+void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 {
-	char	*str;
-
-	str = ft_memalloc(size + 1);
-	return (str);
+	if ((*alst)->next != NULL)
+		ft_lstdel(&((*alst)->next), del);
+	del((*alst)->content, (*alst)->content_size);
+	free(*alst);
+	*alst = NULL;
 }

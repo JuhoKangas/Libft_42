@@ -1,22 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/29 18:11:40 by jkangas           #+#    #+#             */
-/*   Updated: 2021/12/08 15:12:22 by jkangas          ###   ########.fr       */
+/*   Created: 2021/12/08 14:22:29 by jkangas           #+#    #+#             */
+/*   Updated: 2021/12/08 14:38:29 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
-char	*ft_strnew(size_t size)
+void	ft_lstadd(t_list **alst, t_list *new)
 {
-	char	*str;
-
-	str = ft_memalloc(size + 1);
-	return (str);
+	if (!alst || !new)
+		return ;
+	new->next = *alst;
+	*alst = new;
 }

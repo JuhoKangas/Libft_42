@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 14:52:40 by jkangas           #+#    #+#             */
-/*   Updated: 2021/12/07 15:02:58 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/12/08 15:40:53 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 		if (t_new->content == NULL)
 		{
 			free(t_new);
-			return(NULL);
+			return (NULL);
 		}
 		ft_memcpy(t_new->content, content, content_size);
 		t_new->content_size = content_size;

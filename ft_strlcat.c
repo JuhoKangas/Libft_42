@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 13:04:44 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/25 13:57:24 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/12/08 16:16:29 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	i = 0;
 	if (dstsize <= dst_len)
 		return (dstsize + src_len);
-	while (i < dstsize - dst_len - 1)
+	while (i < dstsize - dst_len - 1 && src[i] != 0)
 	{
 		dst[dst_len + i] = src[i];
 		i++;
