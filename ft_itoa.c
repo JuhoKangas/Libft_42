@@ -6,12 +6,25 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 12:45:47 by jkangas           #+#    #+#             */
-/*   Updated: 2021/12/06 13:56:38 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/12/08 19:47:46 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+
+static int	ft_power(int base, int power)
+{
+	int	res;
+
+	res = 1;
+	while (power > 0)
+	{
+		res *= base;
+		power--;
+	}
+	return (res);
+}
 
 static int	ft_numlen(int n)
 {

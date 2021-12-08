@@ -6,14 +6,56 @@
 #    By: jkangas <jkangas@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/03 13:55:41 by jkangas           #+#    #+#              #
-#    Updated: 2021/12/08 14:54:30 by jkangas          ###   ########.fr        #
+#    Updated: 2021/12/08 19:47:49 by jkangas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 GCC = gcc -Wall -Wextra -Werror
 INCLUDES = libft.h
-FUNC = ft_putchar \
+STR_SRC = ft_strlen \
+		ft_strdup \
+		ft_strcpy \
+		ft_strncpy \
+		ft_strcat \
+		ft_strncat \
+		ft_strlcat \
+		ft_strchr \
+		ft_strrchr \
+		ft_strstr \
+		ft_strnstr \
+		ft_strcmp \
+		ft_strncmp \
+		ft_strnew \
+		ft_strdel \
+		ft_strclr \
+		ft_striter \
+		ft_striteri \
+		ft_strmap \
+		ft_strmapi \
+		ft_strtrim \
+		ft_strsub \
+		ft_strequ \
+		ft_strnequ \
+		ft_strjoin \
+		ft_strequ \
+		ft_strsplit \
+		ft_itoa \
+		ft_tolower \
+		ft_toupper \
+		ft_wordcount \
+
+MEM_SRC = ft_memset \
+		ft_bzero \
+		ft_memcpy \
+		ft_memccpy \
+		ft_memmove \
+		ft_memchr \
+		ft_memcmp \
+		ft_memalloc \
+		ft_memdel \
+
+PUT_SRC = ft_putchar \
 		ft_putstr \
 		ft_putnbr \
 		ft_putendl \
@@ -21,66 +63,33 @@ FUNC = ft_putchar \
 		ft_putstr_fd \
 		ft_putendl_fd \
 		ft_putnbr_fd \
-		ft_strlen \
-		ft_strmap \
-		ft_strmapi \
-		ft_strdup \
-		ft_strcmp \
-		ft_strncmp \
-		ft_strcpy \
-		ft_strncpy \
-		ft_strclr \
-		ft_strstr \
-		ft_strnew \
-		ft_strtrim \
-		ft_strdel \
-		ft_strsub \
-		ft_strequ \
-		ft_strnequ \
-		ft_strnstr \
-		ft_strjoin \
-		ft_strequ \
-		ft_striter \
-		ft_striteri \
-		ft_strchr \
-		ft_strrchr \
-		ft_strcat \
-		ft_strncat \
-		ft_strlcat \
-		ft_strsplit \
-		ft_atoi \
-		ft_itoa \
-		ft_abs \
-		ft_power \
-		ft_isalnum \
-		ft_isalpha \
-		ft_isascii \
-		ft_isdigit \
-		ft_isprint \
-		ft_isspace \
-		ft_isupper \
-		ft_islower \
-		ft_wordcount \
-		ft_memccpy \
-		ft_memcpy \
-		ft_memcmp \
-		ft_memset \
-		ft_memchr \
-		ft_memdel \
-		ft_memalloc \
-		ft_memmove \
-		ft_bzero \
-		ft_tolower \
-		ft_toupper \
-		ft_lstnew \
+
+LST_SRC = ft_lstnew \
 		ft_lstdelone \
 		ft_lstdel \
 		ft_lstadd \
 		ft_lstiter \
-		ft_lstmap
+		ft_lstmap \
 
-SRCS = $(addsuffix .c, $(FUNC))
-OBJ = $(addsuffix .o, $(FUNC))
+MATH_SRC = ft_atoi \
+		ft_isalpha \
+		ft_isdigit \
+		ft_isalnum \
+		ft_isascii \
+		ft_isprint \
+		ft_abs \
+		ft_isspace \
+		ft_isupper \
+		ft_islower \
+
+SRC = $(STR_SRC) \
+		$(MEM_SRC) \
+		$(PUT_SRC) \
+		$(LST_SRC) \
+		$(MATH_SRC) \
+
+SRCS = $(addsuffix .c, $(SRC))
+OBJ = $(addsuffix .o, $(SRC))
 
 all: $(NAME)
 
@@ -95,3 +104,5 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re
