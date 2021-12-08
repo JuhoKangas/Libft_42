@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 18:30:28 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/30 13:53:07 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/12/08 18:43:23 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	test_strnew(void)
 	free(str2);
 	str2 = ft_strnew(0);
 
-	if (str2 == NULL)
+	if (strcmp(str2, "") == 0)
 		passed++;
 	else
 	{
