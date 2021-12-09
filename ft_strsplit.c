@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 14:33:17 by jkangas           #+#    #+#             */
-/*   Updated: 2021/12/03 18:32:51 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/12/09 17:39:30 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ static size_t	ft_wordlen(char const *s, char c)
 	return (i);
 }
 
-static char	*ft_add_str(char const*s, char c)
+static char	*ft_add_str(char const *s, char c)
 {
 	size_t	len;
 	char	*str;
