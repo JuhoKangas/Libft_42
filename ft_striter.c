@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 12:42:58 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/30 15:04:06 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/12/10 15:59:25 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,12 @@ void	ft_striter(char *s, void (*f)(char *))
 	size_t	i;
 
 	i = 0;
-	while (s != 0 && s[i] != '\0')
+	if (s && f)
 	{
-		f(&s[i]);
-		i++;
+		while (s[i] != '\0')
+		{
+			f(&s[i]);
+			i++;
+		}
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 14:59:00 by jkangas           #+#    #+#             */
-/*   Updated: 2021/11/30 15:04:39 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/12/10 16:00:08 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,12 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	unsigned int	i;
 
 	i = 0;
-	while (s != 0 && s[i] != '\0')
+	if (s && f)
 	{
-		f(i, &s[i]);
-		i++;
+		while (s != 0 && s[i] != '\0')
+		{
+			f(i, &s[i]);
+			i++;
+		}
 	}
 }
