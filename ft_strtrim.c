@@ -6,12 +6,11 @@
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 17:21:36 by jkangas           #+#    #+#             */
-/*   Updated: 2021/12/02 19:42:52 by jkangas          ###   ########.fr       */
+/*   Updated: 2021/12/10 19:13:13 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 char	*ft_strtrim(char const *s)
 {
