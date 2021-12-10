@@ -6,7 +6,7 @@
 #    By: jkangas <jkangas@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/03 13:55:41 by jkangas           #+#    #+#              #
-#    Updated: 2021/12/08 19:47:49 by jkangas          ###   ########.fr        #
+#    Updated: 2021/12/10 19:36:42 by jkangas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -94,14 +94,18 @@ OBJ = $(addsuffix .o, $(SRC))
 all: $(NAME)
 
 $(NAME):
-	$(GCC) -c $(SRCS) -I$(INCLUDES)
-	ar rcs $(NAME) $(OBJ)
+	@$(GCC) -c $(SRCS) -I$(INCLUDES)
+	@echo "Files compiled"
+	@ar rcs $(NAME) $(OBJ)
+	@echo "Library 'libft.a' created"
 
 clean:
-	rm -f $(OBJ)
+	@rm -f $(OBJ)
+	@echo "Objects removed"
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
+	@echo "$(NAME) removed"
 
 re: fclean all
 
