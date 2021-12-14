@@ -1,32 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   test_putendl.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jkangas <jkangas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/02 16:27:58 by jkangas           #+#    #+#             */
-/*   Updated: 2021/12/13 18:54:53 by jkangas          ###   ########.fr       */
+/*   Created: 2021/11/08 15:33:50 by jkangas           #+#    #+#             */
+/*   Updated: 2021/11/08 15:39:33 by jkangas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <stdlib.h>
+#include "../libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+int	main(void)
 {
-	char	*ret;
-	size_t	len1;
-	size_t	len2;
+	char *str1 = "Testing line\n";
+	char *str2 = "\t";
+	char *str3 = "";
 
-	if (!s1 || !s2)
-		return (NULL);
-	len1 = ft_strlen(s1);
-	len2 = ft_strlen(s2);
-	ret = ft_strnew(len1 + len2);
-	if (ret == NULL)
-		return (NULL);
-	ret = ft_strcat(ret, s1);
-	ret = ft_strcat(ret, s2);
-	return (ret);
+	ft_putendl(str1);
+	ft_putendl(str2);
+	ft_putendl(str3);
 }
